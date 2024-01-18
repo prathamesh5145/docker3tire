@@ -8,4 +8,4 @@ ADD https://s3-us-west-2.amazonaws.com/studentapi-cit/student.war /opt/apache-to
 ADD https://s3-us-west-2.amazonaws.com/studentapi-cit/mysql-connector.jar /opt/apache-tomcat-8.5.98.tar.gz/lib/mysql-connector.jar  
 COPY context.xml conf/context.xml
 EXPOSE 8080
-CMD ["./bin/catalina.sh", "run"]
+CMD ["./opt/apache-tomcat-8.5.98.tar.gz/bin/catalina.sh", "run"]
